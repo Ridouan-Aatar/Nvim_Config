@@ -1,13 +1,13 @@
 vim.env.PATH = vim.env.PATH .. ":/home/raatar/ripgrep/target/release"
 
-local formatgrp = vim.api.nvim_create_augroup("C_format_42", {})
+--local formatgrp = vim.api.nvim_create_augroup("C_format_42", {})
 
 vim.opt.scrolloff = 5
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-  command = "CFormat42",
-  group = formatgrp,
-})
+-- V--vim.api.nvim_create_autocmd("BufWritePre", {
+--   command = "CFormat42",
+--   group = formatgrp,
+-- })--
 
 vim.diagnostic.config({
     virtual_text = true,

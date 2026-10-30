@@ -3,6 +3,7 @@ vim.keymap.set("n", "<leader>a", "<cmd>NvimTreeFocus<CR>")
 vim.keymap.set('n', '<A-Right>', ':tabnext<CR>', { silent = true })
 vim.keymap.set('n', '<A-Left>', ':tabprevious<CR>', { silent = true })
 
+vim.keymap.set('n', '<leader>mp', '<cmd>MarkdownPreviewToggle<cr>', { desc = "Toggle Markdown Preview" })
 
 
 -- sliding lines : Normal mode----------------------------------------
@@ -19,6 +20,7 @@ vim.keymap.set('v', '<A-Down>', ":m '>+1<CR>gv=gv", { desc = 'Move selection dow
 vim.keymap.set('v', '<A-Up>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
 --------------------------------------------------------------------
 vim.keymap.set("n", "<leader>r", "<cmd>Telescope find_files<CR>")
+vim.keymap.set("n", "<leader>e", "<cmd>Telescope diagnostics<CR>")
 vim.keymap.set("n", "<leader>w", "<cmd>Telescope grep_string<CR>")
 
 
